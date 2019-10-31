@@ -29,6 +29,6 @@ for i in range(50):
 			for i,j,k in zip(nameList,priceList,locationList):
 				writer.writerow([i,j,k])
 		print(rawList)
-	driver.find_element_by_xpath('//*[@id="search_result_container"]/div[3]/div/ol/li[2]/a').click()
+	driver.find_element_by_xpath('//*[@id="search_result_container"]/div[3]/div/ol/li/a[@title="下一頁"]').click()
 
 driver.quit()
